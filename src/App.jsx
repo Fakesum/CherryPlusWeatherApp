@@ -157,7 +157,7 @@ function App() {
           )()
         }
       </MapContainer>
-      <footer>© -------------------------, Ansh Mathur</footer>
+      <footer>© Ansh Mathur, License Undecided ¯\_(ツ)_/¯ </footer>
     </div>
   );
 }
