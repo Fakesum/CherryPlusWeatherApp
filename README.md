@@ -7,6 +7,8 @@ Weather App created as a project assigned by cherry plus network club.
 installation can be done using npm.
 
 ```
+git clone https://github.com/Fakesum/CherryPlusWeatherApp.git
+cd CherryPlusWeatherApp
 npm install
 ```
 
