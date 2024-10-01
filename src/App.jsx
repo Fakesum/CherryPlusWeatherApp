@@ -23,6 +23,8 @@ var search_locations = [];
 function ChangeCenter({ center, zoom }) {
   const map = useMap();
   useEffect(() => {
+    map.setView([0, 0]); // this fixes some issues with setView where it doesn't sometimes
+    // work if the final loaction is visibile on screen even on the lowest zoom setting.
     map.setView(center);
     map.setZoom(zoom)
   }, [center, map]);

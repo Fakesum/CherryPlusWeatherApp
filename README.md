@@ -38,10 +38,6 @@ npm run dev
 - [x] npm / node
 - [x] vite
 
-# Bugs
-
-- [ ] when searching and clicking a location to go to it,the location of the map won't be changed if the final location is already on the screen(even on zoom 0 where the entire world map is visible) only the zoom would be changed, just make sure that the camera is zoomed in while a search is being made.
-
 # Screenshots
 
 <img src="https://github.com/Fakesum/CherryPlusWeatherApp/blob/main/screenshots/img%20(1).png?raw=true">
