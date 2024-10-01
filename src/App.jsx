@@ -71,7 +71,8 @@ function App() {
   function checkWeather(marker_data, popupData, setIsVisible){
 
     /* I am aware this is unsafe as all hell. 
-    saving this in a secrets file, is on the todo list.*/
+    saving this in a secrets file, is on the todo list, but since this is publicly avilable data, there is no gaurenty that I will actually get make a secrets file
+    for this api key.*/
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${marker_data.location.lat}&lon=${marker_data.location.lon}&appid=da00953907b5ec2c5db00f53ffd89e68`)
       .then(res => {return res.json()})
       .then(res => {setIsVisible(false);popupData(res);forceUpdate();})
