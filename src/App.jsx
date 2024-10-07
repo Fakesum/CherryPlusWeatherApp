@@ -4,6 +4,8 @@ import WeatherDisplay from './WeatherDisplay';
 import './App.css';
 import 'leaflet/dist/leaflet.css';
 
+
+import { Icon } from 'leaflet';
 import { Helmet } from 'react-helmet';
 
 import ReactLoading from 'react-loading'
