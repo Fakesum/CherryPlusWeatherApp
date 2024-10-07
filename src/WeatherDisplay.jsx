@@ -38,7 +38,7 @@ export default function WeatherDisplay({ weatherData }){
                 {/* AQI is loaded from another api */}
                 {
                     useEffect(()=>{
-                        fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${weatherData.coord.lat}&lon=${weatherData.coord.lon}&appid=da00953907b5ec2c5db00f53ffd89e68`)
+                        fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${weatherData.coord.lat}&lon=${weatherData.coord.lon}&appid=da00953907b5ec2c5db00f53ffd89e68`)
                             .then((res) => {return res.json()})
                             .then(res => {document.querySelector('.replace-with-aqi').outerHTML = ` ${replaceWithRating(res.list[0].main.aqi)}(${res.list[0].main.aqi})`})
                             .catch((e) => {});
