@@ -1,4 +1,5 @@
 # Simple Weather App
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3b59a89c-8aa0-45d6-a339-af6bab6dbbb2/deploy-status)](https://app.netlify.com/sites/simpleweatherappcherryplus/deploys)
 
 Weather App created as a project assigned by cherry plus network club.
 
