@@ -39,6 +39,14 @@ function App() {
   const [search_loading, setSearchLoading] = useState(false);
   const [temp_marker, setTempMarker] = useState(undefined);
 
+  const marker_icon = new Icon({
+    iconUrl: "assets/marker-icon-2x.png",
+    // iconSize: [32, 48],
+    iconSize: [25, 41],
+    iconAnchor: [10, 41],
+    popupAnchor: [2, -40],  
+  });
+
   function changeTheme(){
     // this can be done in a more smart way but that is not really required here.
 
@@ -129,7 +137,7 @@ function App() {
           markers.map((marker_data, idx) => {
             var [isLoading, setIsLoading] = useState(true);
             var [popupData, setPopupData] = useState({});
-            return <Marker position={marker_data.location} key={`marker-${idx}`} eventHandlers={{click: (e) => {checkWeather(marker_data, setPopupData, setIsLoading)}}} >
+            return <Marker icon={marker_icon} position={marker_data.location} key={`marker-${idx}`} eventHandlers={{click: (e) => {checkWeather(marker_data, setPopupData, setIsLoading)}}} >
               <Tooltip>
                 {marker_data.name}
               </Tooltip>
@@ -148,7 +156,7 @@ function App() {
               return;
             }
 
-            return <Marker position={[temp_marker.lat, temp_marker.lon]} eventHandlers={{click: (e) => {checkWeather({"location": {"lat": temp_marker.lat, "lon": temp_marker.lon}, "name": temp_marker.name}, setPopupData, setTempIsLoading)}}}>
+            return <Marker icon={marker_icon} position={[temp_marker.lat, temp_marker.lon]} eventHandlers={{click: (e) => {checkWeather({"location": {"lat": temp_marker.lat, "lon": temp_marker.lon}, "name": temp_marker.name}, setPopupData, setTempIsLoading)}}}>
               <Tooltip>
                 {temp_marker.name}
               </Tooltip>
