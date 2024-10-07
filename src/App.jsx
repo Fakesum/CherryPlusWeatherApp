@@ -41,7 +41,6 @@ function App() {
 
   const marker_icon = new Icon({
     iconUrl: "assets/marker-icon-2x.png",
-    // iconSize: [32, 48],
     iconSize: [25, 41],
     iconAnchor: [10, 41],
     popupAnchor: [2, -40],  
