@@ -44,3 +44,7 @@ npm run dev
 <img src="https://raw.githubusercontent.com/Fakesum/CherryPlusWeatherApp/refs/heads/main/screenshots/img%20%20(2).png">
 <img src="https://raw.githubusercontent.com/Fakesum/CherryPlusWeatherApp/refs/heads/main/screenshots/img%20%20(3).png">
 <img src="https://raw.githubusercontent.com/Fakesum/CherryPlusWeatherApp/refs/heads/main/screenshots/img%20%20(4).png">
+
+# Deployment
+
+The repo is hoasted at [https://6703d4e6ee4a1400098b46c7--simpleweatherappcherryplus.netlify.app/](https://6703d4e6ee4a1400098b46c7--simpleweatherappcherryplus.netlify.app/)
